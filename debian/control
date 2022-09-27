@@ -1,0 +1,12 @@
+Source: grub-theme-numigi
+Section: admin
+Priority: optional
+Maintainer: Lanhild <joliveau.loan@gmail.com>
+Build-Depends: debhelper-compat (=13)
+Standards-Version: 4.6.0
+
+Package: grub-theme-numigi
+Architecture: all
+Depends: ${misc:Depends}, grub2-common (>= 2)
+Description: GRand Unified Bootloader, version 2 (Numigi theme)
+ This is the Numigi GRUB theme.
