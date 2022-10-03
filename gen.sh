@@ -12,13 +12,14 @@ TYPE="deb"
 NAME="grub-theme-numigi"
 URL="https://github.com/Lanhild/grub-theme-numigi"
 
-fpm -s dir -t $TYPE -n $NAME -p src\
-	-a all\
-	-v $1\
-	--description "Numigi GRUB bootloader customized theme."\
-	--license $LICENSE\
-	--maintainer $MAINTAINER\
-	--url $URL\
-	--after-install src/postinst\
-	-d grub-theme-numigi
-
+fpm -s dir -t deb -p $NAME-$1-any.deb \
+	--name $NAME \
+	--license $LICENSE \
+	--version $1 \
+	--architecture all \
+	--depends grub2-common \
+	--description "Numigi GRUB bootloader customized theme" \
+	--url "$URL" \
+	--maintainer "$MAINTAINER" \
+	--after-install $NAME/postinst \
+	$NAME=/boot/grub/themes
