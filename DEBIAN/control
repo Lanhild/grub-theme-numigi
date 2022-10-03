@@ -1,8 +1,0 @@
-Source: grub-numigi-theme
-Package: grub-numigi-theme
-Version: 1.0
-Maintainer: Lanhild <joliveau.loan@gmail.com>
-Architecture: all
-Description: GRand Unified Bootloader, version 2 (Numigi theme)
-Section: misc
-Priority: optional
